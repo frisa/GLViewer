@@ -4,4 +4,8 @@
         <file>vshader.glsl</file>
         <file>fshader.glsl</file>
     </qresource>
+    <qresource prefix="/Icons">
+        <file>Resources/close.ico</file>
+        <file>Resources/open.ico</file>
+    </qresource>
 </RCC>

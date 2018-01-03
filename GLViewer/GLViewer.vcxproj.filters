@@ -51,6 +51,9 @@
     <ClCompile Include="GLWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CPointsModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="GLViewer.h">
@@ -68,6 +71,12 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GLWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPointsModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPosition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

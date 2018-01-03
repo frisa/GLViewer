@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CPointsModel.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_GLViewer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -110,6 +111,8 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CPointsModel.h" />
+    <ClInclude Include="CPosition.h" />
     <ClInclude Include="GeneratedFiles\ui_GLViewer.h" />
     <ClInclude Include="GLWidget.h" />
   </ItemGroup>

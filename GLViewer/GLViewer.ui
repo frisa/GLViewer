@@ -15,10 +15,10 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="leFilePath">
       <property name="text">
-       <string>File Path</string>
+       <string>c:\Users\fridr\source\repos\GLViewer\Data\ATAStore1D.txt </string>
       </property>
      </widget>
     </item>
@@ -29,15 +29,28 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="leFilePath">
-      <property name="text">
-       <string>c:\Users\fridr\source\repos\GLViewer\Data\ATAStore1D.txt </string>
+    <item row="1" column="1" colspan="2">
+     <widget class="GLWidget" name="GLWidgetMain"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTableView" name="tvCoordinates">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
       </property>
      </widget>
     </item>
-    <item row="1" column="0" colspan="3">
-     <widget class="GLWidget" name="GLWidgetMain"/>
+    <item row="0" column="0" alignment="Qt::AlignLeft">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>File Path</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -69,13 +82,26 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="GLViewer.qrc">
+     <normaloff>:/Icons/Resources/open.ico</normaloff>:/Icons/Resources/open.ico</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
   </action>
   <action name="actionClose">
+   <property name="icon">
+    <iconset resource="GLViewer.qrc">
+     <normaloff>:/Icons/Resources/close.ico</normaloff>:/Icons/Resources/close.ico</iconset>
+   </property>
    <property name="text">
     <string>Close</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
    </property>
   </action>
  </widget>
@@ -90,5 +116,22 @@
  <resources>
   <include location="GLViewer.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pbLoad</sender>
+   <signal>clicked()</signal>
+   <receiver>actionLoad</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>909</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
